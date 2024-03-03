@@ -1,0 +1,148 @@
+#achievements {
+    .achievement_section {
+        padding-top: 87px;
+        background-image: url(../../assets/achievement-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 262px;
+        position: relative;
+        margin-bottom: 90px;
+    }
+
+    .main_Visitors {
+        width: 100%;
+        max-width: 1124px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+        gap: 10px;
+        // align-items: center;
+        justify-content: space-between;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .Visitor_card1 {
+        padding: 40px 24px;
+        // width: 100%;
+        // max-width: 328px;
+        border-radius: 8px;
+        border: 1.5px solid #29A296;
+        background: rgba(255, 255, 255, 0.70);
+        backdrop-filter: blur(12px);
+        text-align: center;
+        grid-auto-rows: 1fr;
+
+    }
+
+    .Visitor_card1 h3 {
+        color: #28A396;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 72px;
+        /* 112.5% */
+        letter-spacing: -1.28px;
+    }
+
+    .Visitor_card1 p {
+        padding-top: 24px;
+        color: var(--Black, #121212);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        /* 125% */
+    }
+
+    @media screen and (max-width: 916px) {
+        .Visitor_card1 h3 {
+            font-size: 48px;
+            line-height: 58px;
+        }
+
+        .Visitor_card1 p {
+            font-size: 24px;
+            padding-top: 12px;
+            line-height: 36px;
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        .achievement_section {
+            min-height: 200px;
+        }
+        .Visitor_card1 {
+            padding: 20px 14px;
+        }
+
+        .Visitor_card1 h3 {
+            font-size: 38px;
+            line-height: 48px;
+        }
+
+        .Visitor_card1 p {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+
+    }
+
+    @media screen and (max-width: 675px) {
+        .main_Visitors {
+            // grid-template-columns: 1fr 1fr;
+        }
+
+        .Visitor_card1 h3 {
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        // .Visitor_card1 p {
+        //     font-size: 14px;
+        // }
+    }
+
+    @media screen and (max-width: 556px) {
+       
+
+        .Visitor_card1 h3 {
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        .Visitor_card1 p {
+            font-size: 12px;
+            line-height: 22px;
+        }
+        .achievement_section {
+            padding-top: 64px;
+            min-height: 150px;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .Visitor_card1 {
+            padding: 20px 5px 20px 7px;
+        }
+        .main_Visitors {
+            gap: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+    }
+
+  
+}
+
+// font-family: "Inter", sans-serif; 

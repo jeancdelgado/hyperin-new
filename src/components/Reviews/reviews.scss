@@ -1,0 +1,214 @@
+#reviews {
+  .reviews {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    gap: 1rem;
+
+    gap: 20px;
+    &__text {
+      flex: 1 1 27rem;
+      width: 34%;
+      h2 {
+        color: rgba(20, 20, 20, 0.9);
+        font-family: Roboto;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 60px;
+        letter-spacing: -0.96px;
+        margin-bottom: 9px;
+      }
+
+      p {
+        color: black;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+      }
+    }
+    &__carousel {
+      flex: 1 1 30rem;
+      position: relative;
+      width: 66%;
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      &__text {
+        flex: 0 1 auto;
+        width: 100%;
+        h2 {
+          color: rgba(20, 20, 20, 0.9);
+          font-family: Roboto;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 60px;
+          letter-spacing: -0.96px;
+          margin-bottom: 9px;
+        }
+
+        p {
+          color: black;
+          font-family: Roboto;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 28px;
+        }
+      }
+      &__carousel {
+        flex: 0 1 auto;
+        width: 100%;
+      }
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 0 49px;
+    overflow: visible !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-pagination {
+    top: calc(100% + 50px);
+    gap: 16px;
+  }
+
+  .swiper-wrapper {
+    overflow-y: visible !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 72px;
+    height: 7px;
+    border-radius: 16px;
+    background: #fef4e6;
+    opacity: 1;
+
+    &-active {
+      background: #f4a833;
+    }
+  }
+
+  .swiper-button-next {
+    height: 100%;
+    width: 49px;
+    top: 1.3rem;
+    right: 0;
+    &::after {
+      content: "";
+      background-image: url("../../assets/svgs/angle-right-reviews.svg");
+      background-position: center;
+      background-size: contain;
+      right: auto;
+      height: 44px;
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background-repeat: no-repeat;
+      transform: translate(-50%,-50%);
+    }
+  }
+  .swiper-button-prev {
+    height: 100%;
+    width: 49px;
+    top: 1.3rem;
+    left: 0;
+    &::after {
+      content: "";
+      background-image: url("../../assets/svgs/angle-left-reviews.svg");
+      background-position: center;
+      background-size: contain;
+      height: 44px;
+      width: 44px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      right: auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .carouselItem {
+    background: #ededed;
+    padding: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & > p {
+      color: rgba(20, 20, 20, 0.9);
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      text-align: left;
+      line-height: 28px;
+      min-height: 196px;
+    }
+
+    &__quoteIcon {
+      height: 24px;
+      width: 24px;
+      aspect-ratio: 1;
+    }
+    &__divider {
+      border: 1.5px solid #f19200;
+    }
+
+    &__brandInfo {
+      display: flex;
+      gap: 1rem;
+
+      & > img {
+        height: 64px;
+      }
+
+      &-text {
+        flex: 1;
+        padding: 6px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3 {
+          color: #141414;
+          font-family: Roboto;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px;
+          text-align: left;
+        }
+
+        h4 {
+          color: #141414;
+          text-align: left;
+          font-family: Roboto;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+}

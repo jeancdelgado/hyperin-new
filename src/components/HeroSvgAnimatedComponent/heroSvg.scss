@@ -1,0 +1,314 @@
+#svg-animation {
+  @media (max-width: 800px) {
+    max-width: 610px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .inner-svg-box {
+    float: left;
+    width: 100%;
+    margin: 60px 0;
+    display: flex;
+  }
+
+  .pt-5 {
+    padding-top: 50px;
+  }
+
+  .center-svg-box {
+    position: relative;
+  }
+
+  .center-svg-box li:first-child {
+    left: 25%;
+    top: 30%;
+  }
+
+  .center-svg-box li:nth-child(2) {
+    left: 12%;
+    top: 37.5%;
+  }
+
+  .center-svg-box li:nth-child(3) {
+    left: 21%;
+    top: 45%;
+  }
+
+  .center-svg-box li:nth-child(4) {
+    left: 12%;
+    top: 52.5%;
+  }
+
+  .center-svg-box li:nth-child(5) {
+    left: 25%;
+    top: 60%;
+  }
+
+  .center-svg-box li:nth-child(6) {
+    right: 25%;
+    top: 30%;
+  }
+
+  .center-svg-box li:nth-child(7) {
+    right: 12%;
+    top: 37.5%;
+  }
+
+  .center-svg-box li:nth-child(8) {
+    right: 21%;
+    top: 45%;
+  }
+
+  .center-svg-box li:nth-child(9) {
+    right: 12%;
+    top: 52.5%;
+  }
+
+  .center-svg-box li:nth-child(10) {
+    right: 25%;
+    top: 60%;
+  }
+
+  .center-svg-box li:nth-child(11) {
+    left: 57%;
+    bottom: 14%;
+  }
+
+  .center-svg-box li:nth-child(12) {
+    left: 37%;
+    bottom: 14%;
+  }
+
+  .center-svg-box li:nth-child(13) {
+    left: 50%;
+    bottom: 19%;
+    transform: translateX(-50%);
+  }
+
+  .icon-hover-box {
+    width: 6%;
+    height: 6%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .green-icon {
+    left: 0;
+  }
+
+  .blue-icons {
+    right: 0;
+  }
+
+  .yellow-icons {
+    bottom: 0;
+  }
+
+  .icon-hover-box img {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+  .lines-dash {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    z-index: 2;
+  }
+
+  .left-lines {
+    left: 0;
+  }
+
+  .right-lines {
+    right: 0;
+  }
+
+  .bottom-lines {
+    left: 50%;
+    width: 20%;
+    transform: translateX(-50%);
+    bottom: 36px;
+    top: auto;
+  }
+
+  .lines-dash img {
+    width: 100%;
+  }
+
+  .big-center-box {
+    opacity: 0;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .bchart-logo {
+    position: absolute;
+    width: 4%;
+    z-index: 5;
+  }
+
+  .bchart-logo img {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+  #logogreen {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  #logoblue {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+
+  #logoyellow {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+
+  .green-icons,
+  .blue-icons,
+  .yellow-icons,
+  .lines-dash,
+  .bchart-logo {
+    opacity: 0;
+  }
+
+  .green-icons:hover img {
+    border-radius: 100px;
+  }
+
+  #svg-animation {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  // @media (max-width: 767px) {
+    .pt-5 {
+      padding-top: 30px;
+    }
+    .gt-consumer {
+      transform: translate(-350px, -233px);
+    }
+
+    .gt-commercial {
+      transform: translate(350px, -233px);
+    }
+
+    .inner-svg-box {
+      margin: 10px 0;
+    }
+
+    /* .service_container{
+      padding-top: 50px;
+    } */
+
+
+    // @media (max-width: 767px) {
+      .drop-menu-button {
+        width: 100%;
+        height: 100%;
+      }
+
+      .background_themes {
+        background-image: none;
+      }
+
+      #svg-animation {
+        transform: scale(2);
+        margin-top: 43%;
+        height: 767px;
+      }
+
+      .service .space {
+        margin-top: 50px;
+      }
+
+      .logos-row {
+        gap: 30px;
+      }
+    // }
+
+    #parallax-container {
+      left: 0;
+    }
+
+    .navbar {
+      margin-top: 0;
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    .carousel-y {
+      flex-direction: column;
+      margin-bottom: 0;
+      margin-top: 0;
+      gap: 10px;
+    }
+
+    .figure1 {
+      width: 100%;
+    }
+
+    .carousel-x {
+      left: 0%;
+      width: 100%;
+    }
+
+    .logos-color img {
+      width: 100%;
+    }
+
+    img.desktop-logo {
+      border: none;
+      outline: none;
+      max-width: 70%;
+    }
+
+    img.mobile-logo {
+      display: none;
+    }
+
+    .desktop-logo-section {
+      position: absolute;
+      width: 55%;
+      top: 3%;
+    }
+
+    #connect {
+      margin-top: 0;
+    }
+
+    .carousel-x {
+      margin: 0;
+    }
+
+    header .navigation {
+      margin-top: -35px;
+    }
+
+    header .navigation {
+      float: left;
+      width: 100%;
+    }
+  // }
+
+  .service_container {
+    padding-top: 6%;
+  }
+
+  @media (max-width: 550px) {
+  }
+}

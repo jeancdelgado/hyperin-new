@@ -1,0 +1,152 @@
+#hero {
+  background: url("../../assets/hero-bg.png");
+  background-position: top center;
+  background-size: cover;
+  min-height: 710px;
+  height: calc(100vh - 116px);
+  display: flex;
+
+  @media (max-width: 1115px) {
+    min-height: none;
+    padding-top: calc(50px + 3rem);
+    height: auto;
+
+    .hero {
+      &__text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;align-items: center;
+      }
+    }
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    &__text {
+      flex: 1 1 40rem;
+      padding: 2px;
+      max-width: 30rem;
+
+      &-title {
+        color: #262626;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: -1.2px;
+        margin-bottom: 24px;
+      }
+
+      &-subtitle {
+        color: black;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px;
+        margin-bottom: 40px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      &-button {
+        border: none;
+        color: white;
+        height: 40px;
+        padding: 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+        background: #f19200;
+        transition: 0.1s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          background: #b96f00;
+        }
+
+        img {
+          height: 24px;
+          width: 24px;
+        }
+      }
+
+      // @media (max-width: 700px) {
+      //   &-title {
+      //     font-size: 32px;
+      //     line-height: 42px;
+      //     text-align: center;
+      //   }
+      //   &-subtitle {
+      //     font-size: 20px;
+      //     line-height: 30px;
+      //   }
+      // }
+    }
+
+    &__animated {
+      flex: 1 1 37rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40rem;
+      overflow: hidden;
+
+      svg {
+        height: 80%;
+        width: 100%;
+      }
+      
+      @media (max-width: 800px) {
+        height: 36rem;
+        svg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      @media (max-width: 500px) {
+        height: 30rem;
+      }
+    }
+
+    // @media (max-width: 1293px) {
+    //   flex-direction: column;
+    //   padding-top: 64px;
+    //   padding-bottom: 41px;
+    //   &__text {
+    //     flex: 0 1 auto;
+    //     text-align: center;
+    //     justify-content: center;
+    //     align-items: center;
+    //     display: flex;
+    //     flex-direction: column;
+    //     max-width: 50rem;
+    //   }
+
+    //   &__animated {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //   }
+    // }
+  }
+
+  @import "../HeroSvgAnimatedComponent/heroSvg.scss";
+}

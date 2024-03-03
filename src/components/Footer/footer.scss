@@ -1,0 +1,196 @@
+#footer {
+    .footer-section {
+        padding-top: 48px;
+        background: #000;
+    }
+    .footer-logo{
+        width: 100%;
+        max-width: 206px;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
+    .top-footer {
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #C1C7CD;
+    }
+
+    .main-input-filed {
+        width: 100%;
+        max-width: 498px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .in-field {
+        width: 100%;
+        max-width: 349px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-bottom: 1px solid var(--CoolGray-30, #C1C7CD);
+        background: var(--CoolGray-10, #F2F4F8);
+        padding: 12px 16px;
+    }
+
+    .in-field input {
+        background: transparent;
+        border: none;
+        width: 100%;
+
+    }
+
+    .in-field input::placeholder {
+        color: var(--CoolGray-60, #697077);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%;
+
+    }
+
+    .subscribe-btn {
+        width: 132px;
+        display: flex;
+        justify-content: center;
+        padding: 16px 12px;
+        border: 2px solid var(--Foundation-Orange-orange-500, #F19200);
+        background: var(--Foundation-Orange-orange-500, #F19200);
+        color: var(--Default-White, var(--white, #FFF));
+
+        /* Button/M */
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        /* 16px */
+        letter-spacing: 0.5px;
+    }
+
+    .main-footer-links {
+        padding: 30px 0;
+       
+        border-bottom: 1px solid var(--CoolGray-30, #C1C7CD);
+    }
+    .ft-links{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 48px;
+    }
+
+    .main-footer-links .footer-link {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .main-footer-links .footer-link .fp-link {
+        color: var(--Default-White, var(--white, #FFF));
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        /* 16px */
+    }
+
+    .down-p {
+        padding: 12px 0;
+        color: var(--Default-White, var(--white, #FFF));
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+    }
+    .google-btn,
+    .google-btn2{
+        padding-top: 16px;
+        display: flex;
+        gap: 16px;
+    }
+    .join-us{
+        padding-top: 24px;
+        width: 100%;
+    max-width: 266px;
+    margin-left: auto;
+    }
+    .Inc-d{
+        padding: 30px 0;
+    }
+    .Inc-d p{
+        color: var(--Default-White, var(--white, #FFF));
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%;
+    }
+
+    @media screen and (max-width: 720px){
+        .top-footer{
+            flex-wrap: wrap;
+        }
+        .ft-links{
+           display: flex;
+           flex-wrap: wrap;
+        }
+        .join-us {
+            margin-left: unset;
+        }
+        .footer-logo{
+            width: 100%;
+            max-width: 170px;
+        }
+    }
+    @media screen and (max-width: 420px){
+        .ft-links{
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        gap: 10px;
+        row-gap: 40px;
+    }
+    .google-btn{
+        flex-wrap: wrap;
+    }
+    .google-btn img{
+        width: 120px;
+
+    }
+    .main-footer-links .footer-link .fp-link{
+        font-weight: 300;
+    }
+    .main-input-filed{
+        flex-wrap: wrap;
+    }
+    .subscribe-btn{
+        width: 100%;
+    }
+    .in-field,
+    .subscribe-btn  {
+        padding: 8px 12px;
+    }
+    .in-field input::placeholder {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .footer-logo{
+        width: 100%;
+        max-width: 122px;
+    }
+
+}
+@media screen and (max-width: 375px){
+    .in-field input::placeholder {
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
+}

@@ -1,0 +1,137 @@
+@mixin flex($jc: center, $ai: center, $dir: row) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $dir;
+}
+
+
+#navbar {
+  // padding: 19px 0;
+  display: flex;align-items: center;
+  background: white;
+  position: relative;
+  height: 50px;
+
+  .container {
+    @include flex();
+  }
+
+  #logo {
+    margin-right: auto;
+    height: 32px;
+  }
+
+  nav {
+    @include flex();
+    a {
+      padding: 5px 15px;
+      text-decoration: none;
+    }
+    ul {
+      @include flex();
+      list-style: none;
+      gap: 1rem;
+
+      li {
+
+        a {
+          display: block;
+        }
+
+        &.active {
+          font-weight: 500;
+        }
+      }
+    }
+    .secondary-button {
+      border: none;
+      a {
+        border: 1px solid #f19200;
+        color: #f19200;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        background: white;
+      }
+
+      
+    }
+    button.secondary-button {
+      margin-left: 1.5rem;
+    }
+
+    .mobile-menu {
+      display: none;
+    }
+    
+    @media (max-width: 800px) {
+      .mobile-menu {
+        display: block;
+      }
+      .navbar_menu {
+        z-index: 50;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        justify-content: flex-start;
+        box-shadow: 0 1rem 1rem rgba(70, 70, 70, 0.272);
+        background: black;
+        transform: translateY(-5%);
+        opacity: 0;
+        pointer-events: none;
+        // transition: all 0.3s ease-in-out;
+        gap: 0rem;
+
+        li {
+          width: 100%;
+          text-align: left;
+          border-bottom: 1px solid white;
+          
+          
+          a {
+            padding: 1.5rem 0;
+            color: white;
+            font-size: 1.5rem;
+
+          }
+          &.active {
+            a {
+              color: white;
+              font-weight: 700 ;
+              opacity: 0.5;
+            }
+          }
+
+          &:not(.active) {
+            a {
+              font-weight: 300;
+            }
+          }
+
+          &:hover {
+            background: rgb(39, 39, 39);
+
+          }
+        }
+
+        &.show {
+          transform: translateY(0%);
+          opacity: 1;
+          pointer-events: all;
+        }
+
+        & .secondary-button {
+          display: none !important;
+        }
+      }
+    }
+  }
+}

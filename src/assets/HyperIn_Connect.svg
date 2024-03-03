@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="548px" height="548px" viewBox="0 0 548 548" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Connect</title>
+    <defs>
+        <linearGradient x1="75.330751%" y1="32.0623629%" x2="22.2637524%" y2="68.6387613%" id="linearGradient-1">
+            <stop stop-color="#92C8D8" offset="0%"></stop>
+            <stop stop-color="#1873B9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Connect" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(67.964844, 75.992188)" fill-rule="nonzero" id="Group">
+            <g>
+                <polygon id="Polygon-Copy" fill="#055B7F" points="274.535156 0 411.535156 79.203125 411.535156 237.609375 274.535156 158.40625"></polygon>
+                <polygon id="Polygon" fill="url(#linearGradient-1)" points="137 79.203125 274 158.272461 274 316.411133 137 395.480469 1.60290309e-14 316.411133 0 158.272461"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

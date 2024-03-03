@@ -1,0 +1,126 @@
+#demoRequest {
+    .demorequest_section {
+        background: #EDEDED;
+        padding: 85px 0;
+    }
+
+    .main-efficiency {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .efficiency-text {
+        width: 100%;
+        max-width: 683px;
+    }
+
+    .efficiency-text h2 {
+        color: rgba(21, 21, 21, 0.90);
+        font-family: Roboto;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 60px;
+        /* 125% */
+        letter-spacing: -0.96px;
+    }
+
+    .request-btn {
+        padding-top: 63px;
+        display: flex;
+        gap: 17px;
+    }
+
+    .request-btn .demo-btn {
+        width: 100%;
+        max-width: 222px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        justify-content: center;
+        border: 1px solid var(--Foundation-Orange-orange-500, #F19200);
+        background: var(--Foundation-Orange-orange-500, #F19200);
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        color: var(--Base-White, var(--white, #FFF));
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        /* 155.556% */
+
+    }
+
+    .contact-btn {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        color: var(--Foundation-Orange-orange-600, #DB8500) !important;
+    }
+
+    .efficiency-img {
+        width: 100%;
+        max-width: 498px;
+    }
+
+    .efficiency-img img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 991px) {
+        .main-efficiency {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .efficiency-text h2 {
+            text-align: center;
+        }
+
+        .request-btn {
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .efficiency-text h2 {
+            font-size: 36px;
+            line-height: 48px;
+        }
+    }
+
+    @media screen and (max-width: 470px) {
+        .efficiency-text h2 {
+            font-size: 32px;
+            line-height: 42px;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .efficiency-text h2 {
+            font-size: 28px;
+            line-height: 40px;
+        }
+
+        .request-btn .demo-btn {
+            height: 40px;
+            font-size: 14px;
+            gap: 2px;
+        }
+
+        .request-btn {
+            padding-top: 32px;
+            gap: 6px;
+            // flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 360px) {
+            .efficiency-text h2 {
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+    }
+}

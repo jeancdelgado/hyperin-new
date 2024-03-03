@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  color: black;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+#bodyClone {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  transform: translateY(0%);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  position: fixed;
+  
+  // @media (min-width: 801px) {
+    &.hidden {
+      transform: translateY(-100%);
+    }
+    &.visible {
+      transform: translateY(0%);
+    }
+  }
+// }
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+@import url("./global.scss");
+@import url("./components/Achievements/achievements.scss");
+@import url("./components/Announcements/announcements.scss");
+@import url("./components/CallToAction/callToAction.scss");
+@import url("./components/Footer/footer.scss");
+@import url("./components/DemoRequest/demoRequest.scss");
+@import url("./components/Hero/hero.scss");
+@import url("./components/Navbar/navbar.scss");
+@import url("./components/PowerTool/powerTool.scss");
+@import url("./components/PowerTools/powerTools.scss");
+@import url("./components/Reviews/reviews.scss");
+@import url("./components/TrustedUsers/trustedUsers.scss");
+@import url("./components/WhyHyperIn/whyHyperIn.scss");

@@ -1,0 +1,147 @@
+#cta {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    .more-leads-section {
+        border-radius: 12px;
+        background: linear-gradient(151deg, #00B09A 18.88%, #009CB0 96.29%);
+        padding: 50px 12px;
+        text-align: center;
+    }
+
+    .main-leads {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .more-leads-section h2 {
+        color: var(--white, #FFF);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 60px;
+        /* 125% */
+        letter-spacing: -0.96px;
+    }
+
+    .more-leads-section .enterprise-p {
+        padding-top: 16px;
+        color: #DFFFFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px;
+        /* 166.667% */
+    }
+
+    .more-leads-section .booked-btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        padding-top: 24px;
+    }
+
+    .more-leads-section .Bookdemo-btn {
+        width: 100%;
+        max-width: 202px;
+        height: 60px;
+        color: var(--Black, #121212);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: none;
+    }
+
+    .more-leads-section .contect-us-btn {
+        width: 100%;
+        max-width: 202px;
+        height: 60px;
+        background: transparent;
+        border: none;
+        color: var(--white, #FFF);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .Onboarding {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        padding-top: 32px;
+    }
+
+    .more-leads-section .Onboarding-d {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .more-leads-section .Onboarding-d p {
+        color: #DFFFFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px;
+        /* 150% */
+    }
+
+    @media screen and (max-width: 670px) {
+        .more-leads-section h2 {
+            font-size: 32px;
+            line-height: 44px;
+        }
+
+    }
+
+    @media screen and (max-width: 420px) {
+        .more-leads-section h2 {
+            max-width: 240px;
+            margin: 0 auto;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        .more-leads-section .enterprise-p {
+            padding-top: 12px;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        .more-leads-section .Bookdemo-btn,
+        .more-leads-section .contect-us-btn {
+            width: 100%;
+            max-width: 180px;
+            height: 45px;
+        }
+        .more-leads-section .Onboarding-d p {
+            font-size: 18px;
+
+    }
+    }
+
+    @media screen and (max-width: 800px) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+}

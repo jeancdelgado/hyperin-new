@@ -1,0 +1,164 @@
+#whyHyperIn {
+  margin-top: 17px;
+  .whyHyperIn {
+    &__heading {
+      color: #101828;
+      font-family: Roboto;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 44px;
+      letter-spacing: -0.72px;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      color: #475467;
+      font-family: Roboto;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 30px;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 768px;
+    }
+
+    @media screen and (max-width: 800px) {
+      &__heading {
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+      &__description {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    &__flexBox {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+
+      &-tabs {
+        flex: 1 1 30rem;
+      }
+
+      &-dynamicImage {
+        flex: 1 1 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        min-height: 491px;
+
+        img {
+          opacity: 0;
+          position: absolute;
+          height: 100%;
+          width: auto;
+          max-width: 100%;
+          object-fit: contain;
+          object-position: bottom;
+          &.active {
+            animation: slideInFade 0.5s ease-out forwards;
+          }
+        }
+        @media screen and (max-width: 800px) {
+          min-height: 300px;
+          img {
+            width: 100%;
+            height: 100%;
+            max-width: none;
+            object-fit: contain;
+            bottom: 0;
+          }
+        }
+      }
+    }
+
+    &__tab {
+      padding: 16px 24px;
+      border-left: 4px solid #f2f4f7;
+      cursor: pointer;
+
+      h4 {
+        color: #101828;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        color: #475467;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        background: white;
+        border: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        span {
+          color: #5dafc7;
+        }
+        img {
+          translate: 0px;
+          transition: all 0.1s ease;
+        }
+
+        &:hover img {
+          translate: 5px;
+        }
+      }
+      img.active {
+        display: none;
+      }
+      img.inactive {
+        display: inline-block;
+      }
+
+      &.active {
+        border-left: 4px solid #f19200;
+
+        button span {
+          color: #f19200 !important;
+        }
+        img.active {
+          display: inline-block;
+        }
+        img.inactive {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @keyframes slideInFade {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

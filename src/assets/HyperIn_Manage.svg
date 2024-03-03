@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="548px" height="548px" viewBox="0 0 548 548" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Manage</title>
+    <defs>
+        <linearGradient x1="7.34320354%" y1="4.74696798%" x2="7.34320354%" y2="76.6438201%" id="linearGradient-1">
+            <stop stop-color="#3EC1B3" offset="0%"></stop>
+            <stop stop-color="#0F6071" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Manage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(118.269531, 54.585938)" fill-rule="nonzero" id="Group-2">
+            <g>
+                <g id="Group" transform="translate(0.000000, 126.832031)">
+                    <polygon id="Rectangle" fill="url(#linearGradient-1)" points="0 0 311.996094 0 0 311.996094"></polygon>
+                    <polygon id="Rectangle" fill="#034F54" points="155.998047 155.998047 311.996094 0 311.996094 311.996094"></polygon>
+                </g>
+                <circle id="Oval" fill="#034F54" cx="155.998047" cy="53.2480469" r="53.2480469"></circle>
+                <circle id="Oval" fill="#034F54" cx="258.748047" cy="66.0917969" r="40.4042969"></circle>
+                <circle id="Oval" fill="#034F54" cx="52.7128906" cy="66.0917969" r="40.4042969"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
