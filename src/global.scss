@@ -1,15 +1,21 @@
 $colors :(
-  white: #fff,
+		white: #fff,
 );
 
 @function color($c) {
-  @return map-get($colors, $c);
+	@return map-get($colors, $c);
 }
 
 @mixin flex($jc: center, $ai: center, $dir: row) {
-  display: flex;
-  justify-content: $jc;
-  align-items: $ai;
-  flex-direction: $dir;
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+	flex-direction: $dir;
+}
+.d-flex{
+	display: flex;
+}
+.flex-column{
+	flex-direction: column;
 }
 
