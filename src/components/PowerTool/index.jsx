@@ -19,18 +19,18 @@ export const PowerTool = ({title, description, link, image}) => {
 			image: shoppingImage,
 		},
 		{
-			title: "Monetize",
-			description:
-				"Sell all the advertising and promotional spaces of your shopping mall online. Whether on your digital screens, speciality leasing places, voice commercials or websites, you will generate more revenue.",
-			link: "",
-			image: Reservation_Calendar,
-		},
-		{
 			title: "Connect",
 			description:
 				"Targeting the right consumer traffic with the right type of message on the web, on the location wayfinding and, on mobile loyalty app gives you a competitive advantage across your retail real estate.",
 			link: "",
 			image: hyperin_Connect,
+		},
+		{
+			title: "Monetize",
+			description:
+				"Sell all the advertising and promotional spaces of your shopping mall online. Whether on your digital screens, speciality leasing places, voice commercials or websites, you will generate more revenue.",
+			link: "",
+			image: Reservation_Calendar,
 		},
 	]
 
@@ -49,20 +49,20 @@ export const PowerTool = ({title, description, link, image}) => {
 								<p>Increase efficiency. Reduce manual work. </p>
 							</Link>
 							{/* 2 */}
-							<Link className="services-card-1" to="Monetize" smooth={true} duration={500} spy={false}>
-								<div className="Manage_img">
-									<img alt="Monetize" src={monetize} />
-								</div>
-								<span>Monetize</span>
-								<p>Increase profits. Create new advertisement sales. </p>
-							</Link>
-							{/* 3 */}
 							<Link className="services-card-1" to="Connect" smooth={true} duration={500} spy={false}>
 								<div className="Manage_img">
 									<img alt={`Connect`} src={connect} />
 								</div>
 								<span>Connect</span>
 								<p>Increase footfall. Multi-channel communications. </p>
+							</Link>
+							{/* 3 */}
+							<Link className="services-card-1" to="Monetize" smooth={true} duration={500} spy={false}>
+								<div className="Manage_img">
+									<img alt="Monetize" src={monetize} />
+								</div>
+								<span>Monetize</span>
+								<p>Increase profits. Create new advertisement sales. </p>
 							</Link>
 						</div>
 					</div>
