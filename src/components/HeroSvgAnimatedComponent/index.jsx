@@ -3191,13 +3191,13 @@ export const HeroAnimatedSvg = () => {
               </g>
               <text
                 fontFamily="Roboto-Bold, Roboto"
-                fontSize="18"
+                fontSize="20"
                 fontWeight="medium"
                 // lineSpacing="14"
                 letterSpacing="1"
                 fill="#63BBD4"
               >
-                <tspan x="9" y="117">
+                <tspan x="5" y="112">
                   Mobile Apps
                 </tspan>
               </text>
