@@ -2631,13 +2631,13 @@ export const HeroAnimatedSvg = () => {
               <text
                 id="Reservations"
                 fontFamily="Roboto-Bold, Roboto"
-                fontSize="18"
+                fontSize="20"
                 fontWeight="medium"
                 // lineSpacing="14"
                 letterSpacing="1"
                 fill="#FF9B00"
               >
-                <tspan x="7" y="115">
+                <tspan x="1" y="115">
                   Reservations
                 </tspan>
               </text>
@@ -2714,16 +2714,16 @@ export const HeroAnimatedSvg = () => {
               <text
                 id="Specialty-Leasing"
                 fontFamily="Roboto-Bold, Roboto"
-                fontSize="18"
+                fontSize="20"
                 fontWeight="medium"
                 // lineSpacing="17"
                 letterSpacing="1"
                 fill="#FF9B00"
               >
-                <tspan x="15" y="107.165354">
+                <tspan x="8" y="107">
                   Specialty
                 </tspan>
-                <tspan x="21.559082" y="124.165354">
+                <tspan x="17" y="125">
                   Leasing
                 </tspan>
               </text>
@@ -2803,13 +2803,13 @@ export const HeroAnimatedSvg = () => {
               </g>
               <text
                 fontFamily="Roboto-Bold, Roboto"
-                fontSize="18"
+                fontSize="20"
                 fontWeight="medium"
                 // lineSpacing="14"
                 letterSpacing="1.28571429"
                 fill="#FF9B00"
               >
-                <tspan x="1" y="116">
+                <tspan x="4" y="112">
                   Media Sales
                 </tspan>
               </text>
@@ -2906,12 +2906,12 @@ export const HeroAnimatedSvg = () => {
               </g>
               <text
                 fontFamily="Roboto-Bold, Roboto"
-                fontSize="18"
+                fontSize="20"
                 fontWeight="medium"
                 letterSpacing="1"
                 fill="#63BBD4"
               >
-                <tspan x="27" y="110">
+                <tspan x="24" y="110">
                   Big Data
                 </tspan>
               </text>
@@ -2982,7 +2982,7 @@ export const HeroAnimatedSvg = () => {
               </g>
               <text
                 fontFamily="Roboto-Bold, Roboto"
-                fontSize="18"
+                fontSize="20"
                 fontWeight="medium"
                 letterSpacing="1"
                 fill="#63BBD4"
@@ -3033,7 +3033,7 @@ export const HeroAnimatedSvg = () => {
                 <text
                   id="&lt;/&gt;"
                   fontFamily="Roboto-Bold, Roboto"
-                  fontSize="18"
+                  fontSize="28"
                   fontWeight="medium"
                   fill="#63BBD4"
                 >
@@ -3056,13 +3056,13 @@ export const HeroAnimatedSvg = () => {
               </g>
               <text
                 fontFamily="Roboto-Bold, Roboto"
-                fontSize="18"
+                fontSize="20"
                 fontWeight="medium"
                 letterSpacing="1.28571429"
                 fill="#63BBD4"
                 data-text-consumer
               >
-                <tspan x="24.5080218" y="110">
+                <tspan x="20" y="112">
                   Websites
                 </tspan>
               </text>
@@ -3121,13 +3121,13 @@ export const HeroAnimatedSvg = () => {
               </g>
               <text
                 fontFamily="Roboto-Bold, Roboto"
-                fontSize="18"
+                fontSize="20"
                 fontWeight="medium"
                 // lineSpacing="14"
                 letterSpacing="1"
                 fill="#63BBD4"
               >
-                <tspan x="16" y="115">
+                <tspan x="11" y="115">
                   Wayfinding
                 </tspan>
               </text>
@@ -3264,19 +3264,19 @@ export const HeroAnimatedSvg = () => {
               </g>
             </g>
             <g data-text-manage>
-              <rect id="Rectangle" fill="#ffffff" x="0" y="88" width="119" height="38"></rect>
+              <rect id="Rectangle" fill="#ffffff" x="0" y="88" width="128" height="46"></rect>
               <text
                 fontFamily="Roboto-Bold, Roboto"
-                fontSize="18"
+                fontSize="20"
                 fontWeight="medium"
                 // lineSpacing="14"
                 letterSpacing="1"
                 fill="#28A396"
               >
-                <tspan x="28.425293" y="109">
+                <tspan x="28.425293" y="106">
                   Tenant
                 </tspan>
-                <tspan x="4" y="123">
+                <tspan x="4" y="126">
                   Engagement
                 </tspan>
               </text>
@@ -3386,11 +3386,11 @@ export const HeroAnimatedSvg = () => {
               </g>
               <text
                 fontFamily="Roboto-Bold, Roboto"
-                fontSize="18"
+                fontSize="20"
                 fontWeight="medium"
                 fill="#28A396"
               >
-                <tspan x="36" y="110">
+                <tspan x="34" y="112">
                   CMS
                 </tspan>
               </text>
@@ -3456,16 +3456,16 @@ export const HeroAnimatedSvg = () => {
               </g>
               <text
                 fontFamily="Roboto-Bold, Roboto"
-                fontSize="18"
+                fontSize="20"
                 fontWeight="medium"
                 // lineSpacing="14"
                 letterSpacing="1.28571429"
                 fill="#28A396"
               >
-                <tspan x="29.2066825" y="110">
+                <tspan x="26" y="106">
                   Sales
                 </tspan>
-                <tspan x="9" y="124">
+                <tspan x="4" y="122">
                   Reporting
                 </tspan>
               </text>
@@ -3545,12 +3545,12 @@ export const HeroAnimatedSvg = () => {
 
               <text
                 fontFamily="Roboto-Bold, Roboto"
-                fontSize="18"
+                fontSize="20"
                 fontWeight="medium"
                 letterSpacing="1"
                 fill="#28A396"
               >
-                <tspan x="13.1376953" y="110">
+                <tspan x="10" y="111">
                   Analytics
                 </tspan>
               </text>
@@ -3672,12 +3672,12 @@ export const HeroAnimatedSvg = () => {
               </g>
               <text
                 fontFamily="Roboto-Bold, Roboto"
-                fontSize="19"
+                fontSize="20"
                 fontWeight="medium"
                 letterSpacing="1.05555556"
                 fill="#28A396"
               >
-                <tspan x="17.3932563" y="110">
+                <tspan x="15" y="112">
                   Intranet
                 </tspan>
               </text>
